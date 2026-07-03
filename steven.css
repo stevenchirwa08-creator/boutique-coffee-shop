@@ -1,0 +1,11 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: burlywood;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    width: 100%;
+}
+a{
+    
+}

@@ -30,3 +30,8 @@ h1{
 body{
     background-color:rgb(92, 64, 28)
 }
+.coffee img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}

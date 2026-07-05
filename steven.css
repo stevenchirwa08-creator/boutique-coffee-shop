@@ -5,6 +5,7 @@ nav {
     backdrop-filter: blur(10px);
     border-radius: 25px;
     width: 100%;
+    height: auto;
 }
 
 a {
@@ -16,6 +17,9 @@ a {
     font-weight: bold;
     font-family: sans-serif;
     text-decoration: none;
+}
+nav:hover{
+    
 }
 
 h1 {

@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>CART</title>
     <link rel="stylesheet" href="steven.css">
+      <header>
+        <h1>EVENTS/WORKSHOP</h1>
+    </header>
+
 </head>
+
 <body>
     <nav>
-            <a href="index.html">HOME</a>
-            <a href="coffee.html">COFFEE</a>
-            <a href="equipment.html">EQUIPMENT</a>
-            <a href="event.html">EVENT</a>
-            <a href="offers.html">OFFERS</a>
-            <a href="cart.html">CART</a>
+        <a href="index.html">HOME</a>
+        <a href="coffee.html">COFFEE</a>
+        <a href="equipment.html">EQUIPMENT</a>
+        <a href="event.html">EVENT</a>
+        <a href="offers.html">OFFERS</a>
+        <a href="cart.html">CART</a>
     </nav>
+  
+    <div class="mainevent">
+        <div class="events">
+            <div class="eventcard">
+                <h2>Coffee Tasting and Preparation</h2>
+                <p><strong>Date:</strong> 2026-07-19</p>
+                <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+                <p><strong>Location:</strong> ADMARC LILONGWE</p>
+            </div>
+
+            <div class="eventcard">
+                <h2>Coffee Auctions</h2>
+                <p><strong>Date:</strong> 2026-07-15</p>
+                <p><strong>Time:</strong> 8:00 AM - 5:00 PM</p>
+                <p><strong>Location:</strong> EDGE WATERCOURT GARDEN</p>
+            </div>
+
+            <div class="form">
+                <h2>Register for an Event</h2>
+                <form action="submit_registration.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                     <label for="event">Event Name:</label>
+                    <input type="text" id="event" name="event" required>
+                    <button class="b2" type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>

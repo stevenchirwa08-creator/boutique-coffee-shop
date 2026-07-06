@@ -18,13 +18,12 @@ a {
     font-family: sans-serif;
     text-decoration: none;
 }
-nav:hover{
-    
-}
+
+nav:hover {}
 
 h1 {
     text-align: center;
-    color: rgb(32, 32, 33);
+    color: rgb(217, 217, 228);
     margin-bottom: 25px;
     font-family: sans-serif;
 }
@@ -41,7 +40,7 @@ h1 {
     height: 300px;
     float: left;
     border-radius: 80px;
-    
+
 }
 
 .slideshow {
@@ -51,22 +50,41 @@ h1 {
     overflow: hidden;
     padding: 20px;
 }
-.whole{
+
+.whole {
     animation: coffee 10s ease infinite;
     width: calc(300px * 5);
 }
+
 @keyframes coffee {
-    20%{ margin-left: 0px; }
-    40%{ margin-left:calc(-300px*1); }
-    60%{ margin-left:calc(-300px*2); }
-    80%{ margin-left:calc(-300px*3); }
-    100%{ margin-left:calc(-300px*4); }
+    20% {
+        margin-left: 0px;
+    }
+
+    40% {
+        margin-left: calc(-300px*1);
+    }
+
+    60% {
+        margin-left: calc(-300px*2);
+    }
+
+    80% {
+        margin-left: calc(-300px*3);
+    }
+
+    100% {
+        margin-left: calc(-300px*4);
+    }
 
 }
-body{
-    background-color:rgb(70, 50, 23)
+
+body {
+    background-color: rgb(70, 50, 23);
+    border-radius: 50px;
 }
-footer{
+
+footer {
     background-color: rgb(113, 77, 29);
     color: #fff;
     text-align: center;
@@ -76,14 +94,16 @@ footer{
     left: 0;
     width: 100%;
 }
-.catalouge img{
+
+.catalouge img {
     width: 200px;
     height: 200px;
     padding: 20px;
     margin: 10px;
     border: #010000;
 }
-.catalouge{
+
+.catalouge {
     width: 300px;
     background-color: burlywood;
     margin: 10px;
@@ -92,21 +112,24 @@ footer{
     border-radius: 50px;
 }
 
-.cata{
-    display:flex;
+.cata {
+    display: flex;
     justify-content: center;
     padding: 20px;
     flex-wrap: wrap;
 }
-.catalouge:hover{
+
+.catalouge:hover {
     background-color: rgb(236, 233, 233);
     transition: 1s all ease;
     transform: scale(1.10);
 }
-.catalouge{
+
+.catalouge {
     text-align: center;
 }
-.cata a{
+
+.cata a {
     text-decoration: none;
     background-color: rgb(0, 4, 7);
     color: #fff;
@@ -114,18 +137,93 @@ footer{
     display: block;
     margin: 20px 100px;
 }
-.search{
+.catalouge2 img {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+    border: #010000;
+}
+
+.catalouge2 {
+    width: 300px;
+    background-color: burlywood;
+    margin: 10px;
+    padding: 10px;
+    border: #010000;
+    border-radius: 50px;
+}
+
+.cata {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.catalouge2:hover {
+    background-color: rgb(236, 233, 233);
+    transition: 1s all ease;
+    transform: scale(1.10);
+}
+
+.catalouge2 {
+    text-align: center;
+}
+
+.cata a {
+    text-decoration: none;
+    background-color: rgb(0, 4, 7);
+    color: #fff;
+    padding: 10px;
+    display: block;
+    margin: 20px 100px;
+}
+.search {
     margin-top: 100px;
     position: absolute;
     top: 20px;
     left: 20px;
     padding: 10px;
 }
-.search input{
+
+.search input {
     width: 350px;
     font-size: 18px;
     padding: 10px 20px;
     border-radius: 10px;
     border: none;
-    box-shadow: 0px 2px 5px rgb(0, 0, 0,0.2);
+    box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.2);
+}
+.hh{
+    text-align: center;
+    font-size: larger;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cart1 .items img{
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+.cart1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.cart1 .items{
+    background-color: burlywood;
+    padding: 20px;
+    border-radius: 20px;
+}
+.cart1 .items button{
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    align-items: center;
+    margin-top: 10px;
+    border: none;
 }

@@ -312,3 +312,9 @@ p{
     font-family: italic;
     text-size-adjust: 80px;
 }
+.details{
+    display: none;
+    background-color: rgb(138, 101, 53);
+    padding: 10px;
+    margin-top: 10px;
+}

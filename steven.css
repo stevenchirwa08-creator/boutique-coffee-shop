@@ -1,7 +1,7 @@
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: darkslategray;
+    background-color: #013e37;
     backdrop-filter: blur(10px);
     border-radius: 20px;
     width: 100%;
@@ -88,18 +88,18 @@ h1 {
 }
 
 body {
-    background-color: rgb(62, 42, 15);
+    background-color: #ffefb3;
 }
 
 footer {
-    background-color: darkslategray;
+    background-color: #013e37;
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 110%;
     height: 50px;
 }
 
@@ -112,8 +112,8 @@ footer {
 }
 
 .catalouge {
-    width: 300px;
-    background-color:  rgb(138, 101, 53);
+    width: 280px;
+    background-color:  rgb(232, 190, 99);
     margin: 10px;
     padding: 10px;
     border: #010000;
@@ -130,7 +130,7 @@ footer {
 }
 
 .catalouge img:hover {
-    background-color: rgb(236, 233, 233);
+    background-color: rgb(164, 100, 15);
     transition: 1s all ease;
     transform: scale(1.10);
     border-radius: 20px;
@@ -157,8 +157,8 @@ footer {
 }
 
 .catalouge2 {
-    width: 300px;
-    background-color: rgb(138, 101, 53);
+    width: 280px;
+    background-color: rgb(232, 190, 99);
     margin: 10px;
     padding: 10px;
     border: #010000;
@@ -176,7 +176,7 @@ footer {
 }
 
 .catalouge2 img:hover {
-    background-color: rgb(236, 233, 233);
+    background-color: rgb(164, 100, 15);
     transition: 1s all ease;
     transform: scale(1.10);
     border-radius: 20px;
@@ -195,9 +195,7 @@ footer {
     margin: 20px 100px;
 }
 .search {
-    margin-top: 30px;
-    margin-left: 40px;
-    margin-bottom: 25px;
+    margin: 20px auto;
 }
 
 .search input {
@@ -228,7 +226,7 @@ footer {
     padding: 20px;
 }
 .cart1 .items{
-    background-color: burlywood;
+    background-color: rgb(232, 190, 99);
     padding: 20px;
     border-radius: 20px;
 }
@@ -263,7 +261,7 @@ footer {
     flex: 1;
     min-width: 300px;
     max-width: 400px;
-    background-color: burlywood;
+    background-color: rgb(232, 190, 99);
     border-radius: 20px;
     padding: 24px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
@@ -288,7 +286,7 @@ input{
     border-radius: 20px;
 }
 .b2{
-    width:30%;
+    width:40%;
     padding: 10px;
     background-color: #0e0d0d;
     border-radius:20px ;
@@ -301,7 +299,7 @@ input{
     background-color: #121212;
 }
 p{
-    color: #010000;
+    color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .see{
@@ -314,7 +312,6 @@ p{
 }
 .details{
     display: none;
-    background-color: rgb(138, 101, 53);
     padding: 10px;
     margin-top: 10px;
 }

@@ -30,5 +30,7 @@ function showDetails() {
         details6.style.display = "block";
     }
 }
-
-
+function closeModal(){
+    document.getElementById('discountModal').style.display ='none';
+closeModal();
+}

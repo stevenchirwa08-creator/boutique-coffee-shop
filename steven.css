@@ -9,6 +9,7 @@ nav {
 }
 
 a {
+    background-color: #013e37;
     color: #fff;
     text-decoration: none;
     padding: 10px 15px;
@@ -19,7 +20,7 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     background-color: rgb(0, 0, 0);
     color: #fff;
     transition: all 0.3s ease;
@@ -28,15 +29,15 @@ a:hover{
 
 h1 {
     text-align: center;
-    color:black ;
+    color: black;
     margin-bottom: 25px;
     font-family: italic;
     text-size-adjust: 50px;
 }
 
 .chirwa {
-     background-image: url("inspo\ 1.jpg");
-     background-size: 100% 100%;
+    background-image: url("inspo\ 1.jpg");
+    background-size: 100% 100%;
 }
 
 .coffee img {
@@ -53,7 +54,7 @@ h1 {
     margin: 0 auto;
     overflow: hidden;
     padding: 10px;
-    margin:auto;
+    margin: auto;
 }
 
 .whole {
@@ -110,7 +111,7 @@ footer {
 
 .catalouge {
     width: 280px;
-    background-color:  rgb(232, 190, 99);
+    background-color: rgb(232, 190, 99);
     margin: 10px;
     padding: 10px;
     border: #010000;
@@ -126,11 +127,9 @@ footer {
     padding: 20px;
 }
 
-.catalouge img:hover {
-    background-color: rgb(164, 100, 15);
+.catalouge:hover {
     transition: 1s all ease;
     transform: scale(1.10);
-    border-radius: 20px;
 }
 
 .catalouge {
@@ -138,13 +137,23 @@ footer {
 }
 
 .cata2 button {
-    text-decoration: none;
-    background-color: rgb(0, 4, 7);
+    background-color: #013e37;
     color: #fff;
-    padding: 10px;
-    display: block;
-    margin: 20px 100px;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
 }
+.cata2 button:hover{
+     background-color: rgb(0, 0, 0);
+    color: #fff;
+    transition: all 0.3s ease;
+    border-radius: 30px; 
+}
+
 .catalouge2 img {
     width: 200px;
     height: 200px;
@@ -172,25 +181,34 @@ footer {
     padding: 20px;
 }
 
-.catalouge2 img:hover {
-    background-color: rgb(164, 100, 15);
-    transition: 1s all ease;
-    transform: scale(1.10);
-    border-radius: 20px;
+.catalouge2:hover {
+  transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(26, 46, 43, 0.12);   
 }
 
 .catalouge2 {
     text-align: center;
 }
 
-.cata a {
-    text-decoration: none;
-    background-color: rgb(0, 4, 7);
+.cata button {
+    background-color: #013e37;
     color: #fff;
-    padding: 10px;
-    display: block;
-    margin: 20px 100px;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
 }
+
+.cata button:hover {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    transition: all 0.3s ease;
+    border-radius: 30px;
+}
+
 .search {
     margin: 20px auto;
 }
@@ -204,32 +222,54 @@ footer {
     box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.2);
 }
 
-.cart1 .items img{
+.cart1 .items img {
     width: 200px;
     height: 200px;
     filter: drop-shadow(0 50px 20px #0009);
 }
-.cart1{
+
+.cart1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
 }
-.cart1 .items{
+
+.cart1 .items {
     background-color: rgb(232, 190, 99);
     padding: 20px;
     border-radius: 20px;
-}
-.cart1 .items button{
-    background-color:#013e37;
-    padding: 5px 10px;
-    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    color: #fff;
-    margin-top: 10px;
-    border: none;
 }
-.mainevent{
+.cart1 .items .card-footer{
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.cart1 .items button {
+    background-color: #013e37;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.cart1 .items .price{
+font-size: 1.2rem;
+font-weight: bold;
+color: #d16a3a;
+margin-top: 5px;
+margin-bottom: 12px;
+font-family: sans-serif;
+}
+
+.mainevent {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -241,64 +281,82 @@ footer {
     justify-content: space-between;
 
 }
-.events{
-    flex:1;
+
+.events {
+    flex: 1;
     min-width: 300px;
     flex-direction: column;
     gap: 20px;
     display: flex;
 }
-.eventcard{
+
+.eventcard {
     flex: 1;
     min-width: 300px;
     max-width: 400px;
     background-color: rgb(232, 190, 99);
     border-radius: 20px;
     padding: 24px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
-.eventcard:hover{
-     transition: 1s all ease;
-    transform: scale(1.10);
+
+.eventcard:hover {
+     transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(26, 46, 43, 0.12);
 }
-.form{
-    flex:1;
+
+.form {
+    flex: 1;
     min-width: 300px;
     max-width: 300px;
-    background-color: white;
+    background-color: #f7f3e9;
     border-radius: 20px;
     padding: 24px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 210px;
     right: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-input{
-    width: 98%;
+input {
+    width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin-top:5px;
+    margin-bottom: 15px;
     border-radius: 20px;
+    background-color: #ffffff;
+    border: 1.5px solid #dcd3be;
+    box-sizing: border-box;
 }
-.b2{
-    width:40%;
+
+.b2 {
+    width: 60%;
     padding: 10px;
     background-color: #013e37;
-    border-radius:20px ;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
     color: #fff;
-    transition: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    border:none;
 }
-.b2:hover{
+
+.b2:hover {
     background-color: #121212;
 }
-p{
+
+p {
     color: #0d0d0d;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
-.see{
+
+.see {
     font-style: italic;
     text-align: center;
     color: rgb(233, 233, 240);
@@ -306,40 +364,46 @@ p{
     font-family: italic;
     text-size-adjust: 80px;
 }
-.details{
+
+.details {
     display: none;
     padding: 10px;
     margin-top: 10px;
 }
+
 .logo {
     width: 90px;
     height: 90px;
     border-radius: 50%;
 }
-h2{
+
+h2 {
     color: #0d0d0d;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
-.header-side{
+
+.header-side {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     padding: 30px 0;
 }
-.modal-overlay{
+
+.modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.modal-box{
+
+.modal-box {
     background-color: #ffffff;
     padding: 35px;
     border-radius: 20px;
@@ -347,10 +411,10 @@ h2{
     max-width: 450px;
     position: relative;
     text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-    font-family: sans-serif;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
-.close-btn{
+
+.close-btn {
     position: absolute;
     top: 12px;
     right: 18px;
@@ -361,34 +425,40 @@ h2{
     color: #888888;
     transition: color 0.2s ease;
 }
-.close-btn:hover{
+
+.close-btn:hover {
     color: #333333;
 }
-.modal-heading{
+
+.modal-heading {
     margin-top: 10px;
     margin-bottom: 10px;
     color: #222222;
     font-size: 24px;
 }
-.modal-message{
-color: #666666;
-font-size: 14px;
-line-height: 1.5;
-margin-bottom: 25px;
+
+.modal-message {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 25px;
 }
-.modal-form{
+
+.modal-form {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
-.modal-input{
+
+.modal-input {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 14px;
     outline: none;
 }
-.modal-submit-btn{
+
+.modal-submit-btn {
     background-color: #013e37;
     color: #fff;
     padding: 12px;
@@ -399,3 +469,91 @@ margin-bottom: 25px;
     cursor: pointer;
 }
 
+.offers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+}
+
+.offers .products {
+    background: rgb(232, 190, 99);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offers .products:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(26, 46, 43, 0.12);
+}
+
+.offers .products h4 {
+    font-size: 1.25rem;
+    color: #090909;
+    margin-bottom: 10px;
+}
+
+.offers .products h5 {
+    font-size: 1.6rem;
+    color: #d16a3a;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.offers .products p {
+    font-size: 0.95rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+}
+
+.product-grid .Product {
+    background: rgb(232, 190, 99);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-grid .Product:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 20px rgba(26, 46, 43, 0.12);
+}
+.product-grid .Product h4{
+font-size: 1.25rem;
+color: #010000;
+margin-bottom: 10px;
+}
+.product-grid .Product h5{
+     font-size: 1.5rem;
+    color: #d16a3a;
+    margin-bottom: 12px;
+    font-weight: 700;  
+}
+.product-grid .Product ul li{
+    padding: 6px 0 6px 20px;
+    font-size: 0.95rem;
+    text-align: left;
+}
+.product-grid .Product h2{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}

@@ -4,13 +4,14 @@
 <head>
     <title>OFFERS</title>
     <link rel="stylesheet" href="steven.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
     <header class="header-side">
         <h1>Discouts/Subscription</h1>
         <img src="logo.jpg" class="logo">
     </header>
-</head>
-
-<body>
     <nav>
         <a href="index.html">HOME</a>
         <a href="coffee.html">COFFEE</a>
@@ -19,12 +20,23 @@
         <a href="offers.html">OFFERS</a>
         <a href="cart.html">CART</a>
     </nav>
+    <div class="modal-box" id="subscription-modal">
+            <button class="close-btn" onclick="closeSubscriptionModal()">&times;</button>
+            <h3 class="modal heading">SUBSCRIBE</h3>
+            <p class="modal-message">subscribe and claim a 15% off in welcome offer</p>
+            <form class="modal-form" onsubmit="handleFormSubmit(event)">
+                <input type="email" placeholder="Enter your email address" required class="modal-input">
+                <input type="phone number" placeholder="Enter your phone number" required class="modal-input">
+                <button type="submit" class="modal-submit-btn">subscribe</button>
+
+            </form>
+        </div>
     <section class="offers">
         <div class="products">
             <h4>Welcome offer</h4>
             <h5>15% OFF</h5>
             <p>Available on your first subscription</p>
-            <a href="cart.html">Claim Offer</a>
+            <a href="#">Claim Offer</a>
         </div>
         <div class="products">
             <h4>Weekend Deals</h4>
@@ -50,7 +62,7 @@
                     <li>1 packs of weekly goodies</li>
                     <li>10% Disount</li>
                 </ul>
-                <a href="#">Subscribe</a>
+                <a href="#" onclick="openSubscriptionModal(); return false;">Subscribe</a>
 
             </div>
             <div class="Product">
@@ -61,7 +73,7 @@
                     <li>20% Disount</li>
                     <li>Free delivery</li>
                 </ul>
-                <a href="#">Subscribe</a>
+                <a href="#" onclick="openSubscriptionModal(); return false;">Subscribe</a>
             </div>
             <div class="Product">
                 <h4>Shake promo</h4>
@@ -71,7 +83,7 @@
                     <li>15% Disount</li>
                     <li>Free delivery</li>
                 </ul>
-                <a href="#">Subscribe</a>
+                <a href="#" onclick="openSubscriptionModal(); return false;">Subscribe</a>
             </div>
         </div>
 
@@ -79,7 +91,12 @@
 
     <footer>
         <p>© 2026 Coffee. cell:+256 9811 891 234<br> Email: even@coffee.com</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
     </footer>
+    <script src="javason.js"></script>
 </body>
-
 </html>

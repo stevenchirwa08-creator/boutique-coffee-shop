@@ -34,3 +34,9 @@ function closeModal(){
     document.getElementById('discountModal').style.display ='none';
 closeModal();
 }
+function closeSubscriptionModal(){
+    document.getElementById('subscription-modal').style.display ='none';
+}
+function openSubscriptionModal(){
+    document.getElementById('subscription-modal').style.display ='block';
+}

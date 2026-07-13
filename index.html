@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
     <title>HOME</title>
     <link rel="stylesheet" href="steven.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body class="chirwa">
     <header class="header-side">
         <h1>Bienvenue</h1>
-        <img src="logo.jpg" class="logo">
+        <img src="logo.jpg" class="logo" alt="company logo">
     </header>
     <nav>
         <a href="index.html">HOME</a>
@@ -20,11 +22,12 @@
         <a href="cart.html">CART</a>
     </nav>
 
-   <div id="discountModal" class="modal-overlay">
+    <div id="discountModal" class="modal-overlay">
         <div class="modal-box">
             <button class="close-btn" onclick="closeModal()">&times;</button>
-            <h3 class="modal heading">Get 10% Off Your First Order</h3>
-            <p class="modal-message">Join our coffee summer competition and receive a discount code straight your inbox. Don't miss out</p>
+            <h2 class="modal heading">Get 10% Off Your First Order</h2>
+            <p class="modal-message">Join our coffee summer competition and receive a discount code straight your inbox.
+                Don't miss out</p>
             <form class="modal-form" onsubmit="handleFormSubmit(event)">
                 <input type="email" placeholder="Enter your email address" required class="modal-input">
                 <button type="submit" class="modal-submit-btn">Claim Discount</button>
@@ -37,23 +40,23 @@
         <div class="whole">
 
             <div class="coffee">
-                <img src="slide 1.jpg">
+                <img src="slide-1.jpg">
             </div>
 
             <div class="coffee">
-                <img src="slide 3.jpg">
+                <img src="slide-3.jpg">
             </div>
 
             <div class="coffee">
-                <img src="slide 4.jpg">
+                <img src="slide-4.jpg">
             </div>
 
             <div class="coffee">
-                <img src="slide 5.jpg">
+                <img src="slide-5.jpg">
             </div>
 
             <div class="coffee">
-                <img src="slide 2.jpg">
+                <img src="slide-2.jpg">
             </div>
 
         </div>
@@ -66,6 +69,11 @@
 
     <footer>
         <p>© 2024 Coffee. cell:+256 9811 891 234<br> Email: even@coffee.com</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
     </footer>
     <script src="javason.js"></script>
 </body>

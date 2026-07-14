@@ -509,13 +509,13 @@ h2 {
     box-shadow: 0 12px 20px rgba(26, 46, 43, 0.12);
 }
 
-.offers .products h4 {
+.offers .products h2 {
     font-size: 1.25rem;
     color: #090909;
     margin-bottom: 10px;
 }
 
-.offers .products h5 {
+.offers .products h3 {
     font-size: 1.6rem;
     color: #d16a3a;
     margin-bottom: 12px;
@@ -551,12 +551,12 @@ h2 {
     transform: translateY(-6px);
     box-shadow: 0 12px 20px rgba(26, 46, 43, 0.12);
 }
-.product-grid .Product h4{
+.product-grid .Product h2{
 font-size: 1.25rem;
 color: #010000;
 margin-bottom: 10px;
 }
-.product-grid .Product h5{
+.product-grid .Product h3{
      font-size: 1.5rem;
     color: #d16a3a;
     margin-bottom: 12px;

@@ -37,7 +37,10 @@ h1 {
 
 .chirwa {
     background-image: url("inspo\ 1.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 .coffee img {

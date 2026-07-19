@@ -48,3 +48,12 @@ function clearCart(){
     document.getElementById("total-price").textContent =
     totalAmount.toLocaleString();
 }
+function showForm() {
+  const form = document.querySelector('.form');
+  form.style.display = 'flex';
+}
+
+function hideForm() {
+  const form = document.querySelector('.form');
+  form.style.display = 'none';
+}
